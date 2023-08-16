@@ -10,7 +10,7 @@
   position: relative;
   z-index: 1;
   width: max-content;
-  height: fit-content;
+  height: 720px;
 }
 
 .jumbotron .tombol {
@@ -47,4 +47,35 @@
 .partner-brand img {
   width: 100%;
   height: auto;
+}
+
+/* styling carousel */
+
+#Kontak .display-4 {
+  color: black;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+body {
+  background: #fafbfb;
+}
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
 }
