@@ -1,6 +1,6 @@
 /* Jumbotron */
 .jumbotron {
-  background-image: url(https://picsum.photos/1920/1080);
+  background-image: url(./assets/kuecover.jpg);
   background-size: cover;
   height: 720px;
   position: relative;
@@ -96,7 +96,7 @@ body {
     text-align: center;
   }
   .my-img {
-    width: 320px;
+    width: auto;
     object-fit: cover;
   }
 

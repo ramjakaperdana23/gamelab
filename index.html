@@ -12,6 +12,7 @@
     />
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css">
     <title>Dapur Brinara</title>
   </head>
   <body>
@@ -33,19 +34,19 @@
         <div class="collapse navbar-collapse" id="navbarMobile">
           <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Ingridients</a>
+              <a class="nav-link active" aria-current="page" href="#partner">Ingridients</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang Kami</a>
+              <a class="nav-link" href="#Tentang_Kami">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Dimana?</a>
+              <a class="nav-link" href="#g-maps">Dimana?</a>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-success" href="#" >Produk-Produk Kami</button>
+              <a class="btn btn-outline-danger" href="#produk_kami" role="button">Produk-Produk Kami</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-success">daftar</button>
+          <a class="btn btn-outline-danger" href="#Kontak" role="button">Kontak</a>
           <button type="button" class="btn btn-outline-info ml-3">login</button>
         </div>
       </div>
@@ -58,7 +59,7 @@
           <span>Beli Kue?</span> Yaa di <br />
           Toko KUE <span>BRINARA</span>
         </h1>
-        <a href="" class="btn btn-danger tombol">Pesan Sekarang </a>
+        <a href="#Kontak" class="btn btn-danger tombol" role="button">Pesan Sekarang </a>
       </div>
     </div>
     <!-- Akhir Jumbotron -->
@@ -99,7 +100,7 @@
       <div class="row g-3">
         <div class="col-md-6 col-sm-12">
           <h1>Kualitas</h1>
-          <p>
+          <p style="font-size: large;">
             Kami memprioritaskan kualitas sebagai elemen utama dalam setiap produk kue yang kami sajikan. Dari bahan baku hingga tahap akhir produksi, kami selalu berusaha untuk memberikan kualitas terdepan kepada pelanggan kami. 
           </p>
           <button type="button" class="btn btn-outline-info">
@@ -108,7 +109,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <h1>Bahan Premium</h1>
-          <p>
+          <p style="font-size: large;">
             Kami bangga menyajikan produk-produk kue dengan standar tertinggi di toko kue kami, dan hal ini tak terlepas dari penggunaan berbagai bahan kualitas premium. Setiap kue yang kami hasilkan diperkaya dengan bahan-bahan pilihan,  Kami percaya bahwa kualitas bahan adalah kunci utama dalam menciptakan hasil akhir yang luar biasa. 
           </p>
           <button type="button" class="btn btn-outline-info">
@@ -117,7 +118,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <h1>Sentuhan Di setiap Kue </h1>
-          <p>
+          <p style="font-size: large;">
             Kami mengerti pentingnya momen-momen istimewa dalam kehidupan pelanggan kami. Oleh karena itu, kami berusaha untuk menyediakan produk kue yang dapat menjadi bagian indah dari perayaan dan acara penting dalam kehidupan mereka.
           </p>
           <button type="button" class="btn btn-outline-info">
@@ -126,7 +127,7 @@
         </div>
         <div class="col-md-6 col-sm-12">
           <h1>Kreativitas</h1>
-          <p>
+          <p style="font-size: large;">
             Kami menghargai nilai kreativitas dan inovasi dalam menciptakan berbagai varian kue. Kami selalu berusaha untuk memberikan variasi yang unik,menarik serta inovatif, sehingga setiap pelanggan dapat menemukan sesuatu yang cocok dengan yang diharapkan.
           </p>
           <button type="button" class="btn btn-outline-info">
@@ -141,10 +142,10 @@
     <!-- Tentang Kami -->
     <div id="Tentang_Kami" class="container mt-md-5 mt-sm-2">
       <div class="d-flex row align-items-center gambar">
-        <img src="https://picsum.photos/480" class="rounded-sm  my-img col-lg-6 col-sm-12"/>
+        <img src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/tentang_kami3.png" class="rounded-sm  my-img col-lg-6 col-sm-12" style="height: 480px;"/>
         <div class="col-lg-6 col-sm-12 paragraf">
           <h1>Tentang Kami</h1>
-          <p>
+          <p style="font-size: x-large;">
             Selamat datang di Brinara, destinasi kue pilihan di Madiun! Kami adalah tempat di mana rasa lezat dan kualitas unggul berpadu. Dengan dedikasi terhadap kue berkualitas tinggi, kami hadir untuk melengkapi momen-momen istimewa Anda. Nikmati pengalaman kue yang tak terlupakan dengan sentuhan seni kuliner kami. Selamat datang dan mari berbagi kelezatan bersama Brinara!
           </p>
         </div>
@@ -152,11 +153,12 @@
       <div class="d-flex row align-items-center my-3">
         <div class="col-lg-6 col-md-12">
           <h1>Temukan Kami</h1>
-          <p>
-            Anda dapat menemukan toko kue Brinara dengan mudah di lokasi kami yang strategis di Jl. Pilang Suci, RT.18/RW.04, Pilangbango, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63119. Kami berada di tengah-tengah kota dengan akses yang nyaman, siap menyambut Anda untuk menikmati pilihan kue istimewa kami. Jangan ragu untuk datang dan menjelajahi berbagai kenikmatan kue yang kami sajikan di Brinara!
+          <p style="font-size: x-large;">
+            Anda dapat menemukan toko kue Brinara dengan mudah di lokasi kami yang strategis di <span style="font-style: italic; font-weight: bolder;">Jl. Pilang Suci, RT.18/RW.04, Pilangbango, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63119.</span> Kami berada di tengah-tengah kota dengan akses yang nyaman, siap menyambut Anda untuk menikmati pilihan kue istimewa kami. Jangan ragu untuk datang dan menjelajahi berbagai kenikmatan kue yang kami sajikan di Brinara!
           </p>
         </div>
         <iframe
+          id="g-maps"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15818.535748442615!2d111.5537102!3d-7.61475109999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bf4d0ca4ae17%3A0xadcd2b39c7174599!2sDAPUR%20BRINARA!5e0!3m2!1sid!2sid!4v1692111852769!5m2!1sid!2sid"
           class="col-lg-6 col-md-12 my-map"
           height="600"
@@ -168,11 +170,11 @@
       </div>
     </div>
     <!-- Akhir Tentang Kami -->
-    <section class="pt-5 pb-5">
+    <section id="produk_kami" class="pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h3 class="mb-3">Carousel cards title</h3>
+            <h3 class="mb-3">Apa Sih Yang Kami Buat ??</h3>
           </div>
           <div class="col-12">
             <div
@@ -188,13 +190,12 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="./assets/gambar_produk/kue1.jpeg"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue1.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
+                          <h4 class="card-title">Kue UlangTahun Tema "Traktor"</h4>
                           <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            Dengan warna dominan kuning. Kue yang benar-benar mempresentasikan Alat-alat Konstruksi
                           </p>
                         </div>
                       </div>
@@ -204,13 +205,12 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="./assets/gambar_produk/kue2.jpeg"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue2.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
+                          <h4 class="card-title">Pink With Vanilla</h4>
                           <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            Dengan Tampilan simpel dengan tambahan Lelehan berwarna putih, menunjukkan kesan "Vanilla"Leleh.
                           </p>
                         </div>
                       </div>
@@ -220,65 +220,12 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="./assets/gambar_produk/kue3.jpeg"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue3.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
+                          <h4 class="card-title">Line Friends X BTS</h4>
                           <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="./assets/gambar_produk/kue4.jpeg"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="./assets/gambar_produk/kue5.jpeg"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="./assets/gambar_produk/kue6.jpeg"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            Kue dengan tema karakter BT21 ini sungguh ingin untuk dimiliki bukan?
                           </p>
                         </div>
                       </div>
@@ -292,13 +239,13 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="./assets/gambar_produk/kue7.jpeg"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue4.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
+                          <h4 class="card-title">Feminime "Cat" Yellow X Pink</h4>
                           <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            Kue Tema Kucing dengan warna Kuning & Pink, inspirasi 
+                            untuk merayakan Ultah Putri Tercinta.
                           </p>
                         </div>
                       </div>
@@ -308,13 +255,13 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="./assets/gambar_produk/kue8.jpeg"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue5.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
+                          <h4 class="card-title">Mixue Lovers</h4>
                           <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            Kue Tema Karakter Mixue mungkin bisa jadi 
+                            Inspirasi untuk Mixue Lovers.
                           </p>
                         </div>
                       </div>
@@ -324,13 +271,64 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="./assets/gambar_produk/kue9.jpeg"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue6.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
+                          <h4 class="card-title">Mixue Lovers v.2</h4>
                           <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
+                            Kue Tema Karakter Mixue dengan foto buah hati, 
+                            Inspirasi untuk Mixue Lovers.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue7.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Petualangan Doraemon</h4>
+                          <p class="card-text">
+                            Kue dengan Tema Doraemon, bisa jadi Kue Ultah yang paling Memorable
+                            bagi Buah hati.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue8.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">BTS Members</h4>
+                          <p class="card-text">
+                            Anak bapak ibu suka sekali BTS?? , jadikan saja sebagai kue Ultah untuk buah hati 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue9.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">BTS 2.0</h4>
+                          <p class="card-text">
+                            Serasa Diucapin Ulang Tahun Sama seluruh member BTS??
+                             Pastinya Bakalan Jadi KUE Memorable untukmu 
                           </p>
                         </div>
                       </div>
@@ -342,7 +340,7 @@
           </div>
           <div class="d-flex flex-row text-right" style="justify-content: center;">
             <a
-              class="btn btn-primary mb-3 mr-1 mr-2"
+              class="btn btn-outline-info mb-3 mr-1 mr-2"
               href="#carouselExampleIndicators2"
               role="button"
               data-slide="prev"
@@ -350,7 +348,7 @@
               <i class="fa fa-arrow-left"></i>
             </a>
             <a
-              class="btn btn-primary mb-3 ml-2"
+              class="btn btn-outline-danger mb-3 ml-2"
               href="#carouselExampleIndicators2"
               role="button"
               data-slide="next"
@@ -363,34 +361,63 @@
     </section>
     <!-- Akhir Display Produk  -->
 
-    <div id="Kontak " class="container mt-5">
+    <div id="Kontak" class="container mt-5">
       <div class="d-flex row justify-content-between align-items-center ">
         <div class="col-lg-6 col-md-12 anak-kontak">
           <h1 class="display-4 fw-bold ">
             <span>Masih </span> Ragu ?<br />
-           Yuk <span>sini hubungi kita </span>
+           Yuk <span>sini hubungi Kami </span>
           </h1>
         </div>
         <div class="col-lg-6 col-md-12 footer-tombol">
           <div class="d-flex flex-lg-row flex-md-column footer-tombol-wrapper " style="gap: 8px;">
-            <button type="button" class="btn btn-outline-dark">Whatsapp</button>
-            <button type="button" class="btn btn-outline-dark">Hubungi Kita</button>
+            <button type="button" class="btn btn-outline-success">Whatsapp</button>
+            <button type="button" class="btn btn-outline-info">Hubungi Kami</button>
           </div>
       </div>
       </div>
       <!-- Footer  -->
-      <div class="container mt-5">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
-          <p class="text-center text-muted">© 2023 Dapur, Brinara</p>
-        </footer>
-      </div>
+      <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Whatsapp -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #6cee55;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <p class="text-center text-muted">© 2023 Dapur, Brinara</p>
+        <!-- Copyright -->
+      </footer>
       <!-- Akhir Web/ Footer -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
