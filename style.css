@@ -63,6 +63,10 @@ body {
   background: #fafbfb;
 }
 
+.footer-tombol-wrapper {
+  justify-content: end;
+}
+
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
@@ -78,4 +82,59 @@ body {
 .page-footer a {
   display: flex;
   margin-left: 4px;
+}
+
+@media (max-width: 810px) {
+  .partner-brand img {
+    width: 100%;
+    height: auto;
+  }
+  .gambar {
+    justify-content: center;
+  }
+  .paragraf {
+    text-align: center;
+  }
+  .my-img {
+    width: 320px;
+    object-fit: cover;
+  }
+
+  .my-map {
+    height: 400px !important;
+  }
+  .anak-kontak {
+    text-align: center;
+  }
+  .footer-tombol-wrapper button {
+    width: 300px;
+  }
+  .footer-tombol-wrapper {
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .my-img {
+    width: 350px;
+    object-fit: cover;
+  }
+  .partner-brand {
+    gap: 10px;
+  }
+
+  #Tentang_Kami {
+    margin-top: 5px;
+  }
+
+  .anak-kontak {
+    text-align: center;
+  }
+  .footer-tombol {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-tombol-wrapper {
+    flex-direction: column;
+  }
 }

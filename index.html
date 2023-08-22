@@ -7,79 +7,46 @@
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
     />
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
-    <script type='text/javascript' src=''></script>
-    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
-    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
-    <script type='text/javascript'
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"
-  ></script>
-
     <title>Dapur Brinara</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand"href="#"> <img src="assets/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          Brinara ID</a>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarMobile" 
+          aria-controls="navbarMobile" 
+          aria-expanded="false" 
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarMobile">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Ingridients</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <a class="nav-link" href="#">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="#">Dimana?</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-success" href="#" >Produk-Produk Kami</button>
             </li>
           </ul>
           <button type="button" class="btn btn-outline-success">daftar</button>
-          <button type="button" class="btn btn-outline-info ms-3">login</button>
+          <button type="button" class="btn btn-outline-info ml-3">login</button>
         </div>
       </div>
     </nav>
@@ -91,7 +58,7 @@
           <span>Beli Kue?</span> Yaa di <br />
           Toko KUE <span>BRINARA</span>
         </h1>
-        <a href="" class="btn btn-danger tombol">Beli Sekarang</a>
+        <a href="" class="btn btn-danger tombol">Pesan Sekarang </a>
       </div>
     </div>
     <!-- Akhir Jumbotron -->
@@ -130,49 +97,37 @@
     <!-- Detail Bahan -->
     <div id="ingredients" class="container mt-4">
       <div class="row g-3">
-        <div class="col-6">
-          <h1>Garam</h1>
+        <div class="col-md-6 col-sm-12">
+          <h1>Kualitas</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            nam animi sequi asperiores iusto necessitatibus obcaecati et,
-            possimus omnis, quia aliquam numquam beatae ab minima nemo quidem id
-            quasi voluptates.
+            Kami memprioritaskan kualitas sebagai elemen utama dalam setiap produk kue yang kami sajikan. Dari bahan baku hingga tahap akhir produksi, kami selalu berusaha untuk memberikan kualitas terdepan kepada pelanggan kami. 
           </p>
           <button type="button" class="btn btn-outline-info">
             Learn More!
           </button>
         </div>
-        <div class="col-6">
-          <h1>Garam</h1>
+        <div class="col-md-6 col-sm-12">
+          <h1>Bahan Premium</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            nam animi sequi asperiores iusto necessitatibus obcaecati et,
-            possimus omnis, quia aliquam numquam beatae ab minima nemo quidem id
-            quasi voluptates.
+            Kami bangga menyajikan produk-produk kue dengan standar tertinggi di toko kue kami, dan hal ini tak terlepas dari penggunaan berbagai bahan kualitas premium. Setiap kue yang kami hasilkan diperkaya dengan bahan-bahan pilihan,  Kami percaya bahwa kualitas bahan adalah kunci utama dalam menciptakan hasil akhir yang luar biasa. 
           </p>
           <button type="button" class="btn btn-outline-info">
             Learn More!
           </button>
         </div>
-        <div class="col-6">
-          <h1>Garam</h1>
+        <div class="col-md-6 col-sm-12">
+          <h1>Sentuhan Di setiap Kue </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            nam animi sequi asperiores iusto necessitatibus obcaecati et,
-            possimus omnis, quia aliquam numquam beatae ab minima nemo quidem id
-            quasi voluptates.
+            Kami mengerti pentingnya momen-momen istimewa dalam kehidupan pelanggan kami. Oleh karena itu, kami berusaha untuk menyediakan produk kue yang dapat menjadi bagian indah dari perayaan dan acara penting dalam kehidupan mereka.
           </p>
           <button type="button" class="btn btn-outline-info">
             Learn More!
           </button>
         </div>
-        <div class="col-6">
-          <h1>Garam</h1>
+        <div class="col-md-6 col-sm-12">
+          <h1>Kreativitas</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-            nam animi sequi asperiores iusto necessitatibus obcaecati et,
-            possimus omnis, quia aliquam numquam beatae ab minima nemo quidem id
-            quasi voluptates.
+            Kami menghargai nilai kreativitas dan inovasi dalam menciptakan berbagai varian kue. Kami selalu berusaha untuk memberikan variasi yang unik,menarik serta inovatif, sehingga setiap pelanggan dapat menemukan sesuatu yang cocok dengan yang diharapkan.
           </p>
           <button type="button" class="btn btn-outline-info">
             Learn More!
@@ -184,32 +139,26 @@
     <!-- Akhir detail bahan  -->
 
     <!-- Tentang Kami -->
-    <div id="Tentang Kami " class="container mt-5">
-      <div class="d-flex flex-row align-items-center">
-        <img src="https://picsum.photos/480" class="rounded-3 me-5" />
-        <div>
+    <div id="Tentang_Kami" class="container mt-md-5 mt-sm-2">
+      <div class="d-flex row align-items-center gambar">
+        <img src="https://picsum.photos/480" class="rounded-sm  my-img col-lg-6 col-sm-12"/>
+        <div class="col-lg-6 col-sm-12 paragraf">
           <h1>Tentang Kami</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ab
-            natus excepturi fugiat porro, veritatis itaque dolorum accusamus.
-            Eveniet praesentium tempore similique deserunt qui reprehenderit
-            blanditiis ipsum quas ut rem?
+            Selamat datang di Brinara, destinasi kue pilihan di Madiun! Kami adalah tempat di mana rasa lezat dan kualitas unggul berpadu. Dengan dedikasi terhadap kue berkualitas tinggi, kami hadir untuk melengkapi momen-momen istimewa Anda. Nikmati pengalaman kue yang tak terlupakan dengan sentuhan seni kuliner kami. Selamat datang dan mari berbagi kelezatan bersama Brinara!
           </p>
         </div>
       </div>
-      <div class="d-flex flex-row align-items-center">
-        <div>
+      <div class="d-flex row align-items-center my-3">
+        <div class="col-lg-6 col-md-12">
           <h1>Temukan Kami</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ab
-            natus excepturi fugiat porro, veritatis itaque dolorum accusamus.
-            Eveniet praesentium tempore similique deserunt qui reprehenderit
-            blanditiis ipsum quas ut rem?
+            Anda dapat menemukan toko kue Brinara dengan mudah di lokasi kami yang strategis di Jl. Pilang Suci, RT.18/RW.04, Pilangbango, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63119. Kami berada di tengah-tengah kota dengan akses yang nyaman, siap menyambut Anda untuk menikmati pilihan kue istimewa kami. Jangan ragu untuk datang dan menjelajahi berbagai kenikmatan kue yang kami sajikan di Brinara!
           </p>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15818.535748442615!2d111.5537102!3d-7.61475109999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bf4d0ca4ae17%3A0xadcd2b39c7174599!2sDAPUR%20BRINARA!5e0!3m2!1sid!2sid!4v1692111852769!5m2!1sid!2sid"
-          width="800"
+          class="col-lg-6 col-md-12 my-map"
           height="600"
           style="border: 0"
           allowfullscreen=""
@@ -239,7 +188,7 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                          src="./assets/gambar_produk/kue1.jpeg"
                         />
                         <div class="card-body">
                           <h4 class="card-title">Special title treatment</h4>
@@ -255,7 +204,7 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                          src="./assets/gambar_produk/kue2.jpeg"
                         />
                         <div class="card-body">
                           <h4 class="card-title">Special title treatment</h4>
@@ -271,59 +220,7 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">Special title treatment</h4>
-                          <p class="card-text">
-                            With supporting text below as a natural lead-in to
-                            additional content.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img
-                          class="img-fluid"
-                          alt="100%x280"
-                          src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
+                          src="./assets/gambar_produk/kue3.jpeg"
                         />
                         <div class="card-body">
                           <h4 class="card-title">Special title treatment</h4>
@@ -343,7 +240,7 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                          src="./assets/gambar_produk/kue4.jpeg"
                         />
                         <div class="card-body">
                           <h4 class="card-title">Special title treatment</h4>
@@ -359,7 +256,7 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
+                          src="./assets/gambar_produk/kue5.jpeg"
                         />
                         <div class="card-body">
                           <h4 class="card-title">Special title treatment</h4>
@@ -375,7 +272,59 @@
                         <img
                           class="img-fluid"
                           alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                          src="./assets/gambar_produk/kue6.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/gambar_produk/kue7.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/gambar_produk/kue8.jpeg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Special title treatment</h4>
+                          <p class="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <img
+                          class="img-fluid"
+                          alt="100%x280"
+                          src="./assets/gambar_produk/kue9.jpeg"
                         />
                         <div class="card-body">
                           <h4 class="card-title">Special title treatment</h4>
@@ -393,7 +342,7 @@
           </div>
           <div class="d-flex flex-row text-right" style="justify-content: center;">
             <a
-              class="btn btn-primary mb-3 mr-1 me-2"
+              class="btn btn-primary mb-3 mr-1 mr-2"
               href="#carouselExampleIndicators2"
               role="button"
               data-slide="prev"
@@ -401,7 +350,7 @@
               <i class="fa fa-arrow-left"></i>
             </a>
             <a
-              class="btn btn-primary mb-3 ms-2"
+              class="btn btn-primary mb-3 ml-2"
               href="#carouselExampleIndicators2"
               role="button"
               data-slide="next"
@@ -415,16 +364,18 @@
     <!-- Akhir Display Produk  -->
 
     <div id="Kontak " class="container mt-5">
-      <div class="d-flex flex-row justify-content-between align-items-center">
-        <div>
-          <h1 class="display-4 fw-bold">
+      <div class="d-flex row justify-content-between align-items-center ">
+        <div class="col-lg-6 col-md-12 anak-kontak">
+          <h1 class="display-4 fw-bold ">
             <span>Masih </span> Ragu ?<br />
            Yuk <span>sini hubungi kita </span>
           </h1>
         </div>
-        <div>
-        <button type="button" class="btn btn-outline-dark me-4">Whatsapp</button>
-        <button type="button" class="btn btn-outline-dark ms-3">Hubungi Kita</button>
+        <div class="col-lg-6 col-md-12 footer-tombol">
+          <div class="d-flex flex-lg-row flex-md-column footer-tombol-wrapper " style="gap: 8px;">
+            <button type="button" class="btn btn-outline-dark">Whatsapp</button>
+            <button type="button" class="btn btn-outline-dark">Hubungi Kita</button>
+          </div>
       </div>
       </div>
       <!-- Footer  -->
@@ -441,6 +392,7 @@
         </footer>
       </div>
       <!-- Akhir Web/ Footer -->
-      <script type='text/javascript'></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
   </body>
 </html>
