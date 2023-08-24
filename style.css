@@ -49,6 +49,10 @@
   height: auto;
 }
 
+#ingredients img {
+  display: flex;
+}
+
 /* styling carousel */
 
 #Kontak .display-4 {
@@ -119,7 +123,7 @@ a:focus {
   width: 40px;
   height: 100%;
   line-height: 40px;
-  background: red;
+  background: #dc4c64;
   border: 1px solid #f8f8fc;
   border-radius: 3px;
   font-size: 17px;
@@ -147,6 +151,87 @@ a:focus {
   letter-spacing: 1px;
 }
 /* FAQ */
+
+/* Testimonial */
+.testimonial {
+  font-family: "Open Sans", sans-serif;
+}
+.testimonial h2 {
+  color: #000;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0 70px;
+}
+.testimonial h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 4px;
+  border-radius: 1px;
+  background: #dc4c64;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+.testimonial .carousel .carousel-item {
+  color: #999;
+  overflow: hidden;
+  min-height: 120px;
+  font-size: 13px;
+}
+.testimonial .carousel .media {
+  display: flex;
+}
+.testimonial .carousel .media img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+}
+
+.testimonial .carousel .testimonial {
+  padding: 0 15px 0 60px;
+  position: relative;
+}
+.testimonial .carousel .testimonial::before {
+  content: "\201C";
+  font-family: Arial, sans-serif;
+  color: #e2e2e2;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 54px;
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+.testimonial .carousel .overview b {
+  text-transform: uppercase;
+  color: #dc4c64;
+}
+.testimonial .carousel .carousel-indicators {
+  bottom: -40px;
+}
+.testimonial .carousel-indicators li,
+.carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 1px 3px;
+  box-sizing: border-box;
+}
+.testimonial .carousel-indicators li {
+  background: #e2e2e2;
+  border: 4px solid #fff;
+}
+.testimonial .carousel-indicators li.active {
+  color: #fff;
+  background: #54b4d3;
+  border: 5px double;
+}
 
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -194,7 +279,11 @@ a:focus {
     align-items: center;
   }
 }
-
+@media (max-width: 766px) {
+  .partner-brand {
+    gap: 40px;
+  }
+}
 @media (max-width: 375px) {
   .my-img {
     width: 350px;
