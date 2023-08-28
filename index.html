@@ -6,35 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link
+    <!-- <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
       rel="stylesheet"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
     />
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css"
+    />
     <title>Dapur Brinara</title>
+    <style>
+      .bg-overlay {
+        height: 720px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .carousel-indicators [data-bs-target] {
+        background-color: #000000 !important;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand"href="#"> <img src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/favicon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-          Brinara ID</a>
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/favicon.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Brinara ID</a
+        >
         <button
-          class="navbar-toggler" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#navbarMobile" 
-          aria-controls="navbarMobile" 
-          aria-expanded="false" 
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMobile"
+          aria-controls="navbarMobile"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMobile">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#partner">Ingridients</a>
+              <a class="nav-link active" aria-current="page" href="#partner"
+                >Ingridients</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Tentang_Kami">Tentang Kami</a>
@@ -46,23 +79,51 @@
               <a class="nav-link" href="#FAQ">FAQ?</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-danger" href="#produk_kami" role="button">Produk-Produk Kami</a>
+              <a
+                class="btn btn-outline-danger"
+                href="#produk_kami"
+                role="button"
+                >Produk-Produk Kami</a
+              >
             </li>
           </ul>
-          <a class="btn btn-outline-danger fa fa-address-book" href="#collapseThree" role="button"> <span style="margin-left: 1; font-family: Verdana, Geneva, Tahoma, sans-serif;">Kontak</span></a>
-          <a class="btn btn-outline-light  ml-3 fab fa-instagram" href="https://www.instagram.com/rissa.nurbiyanti/" target="_blank" style="background-color:#C13584 ;"><span style="font-family: cursive;">  Instagram</span></a>
+          <a
+            class="btn btn-outline-danger fa fa-address-book"
+            href="#collapseThree"
+            role="button"
+          >
+            <span style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+              >Kontak</span
+            ></a
+          >
+          <a
+            class="btn btn-outline-light ms-3 fab fa-instagram"
+            href="https://www.instagram.com/rissa.nurbiyanti/"
+            target="_blank"
+            style="background-color: #c13584"
+            ><span style="font-family: cursive"> Instagram</span></a
+          >
         </div>
       </div>
     </nav>
     <!-- Jumbotron -->
 
     <div id="gambar-cover" class="jumbotron jumbotron-fluid">
-      <div class="container d-flex flex-column justify-content-center">
-        <h1 class="display-4 fw-bold">
-          <span>Beli Kue?</span> Yaa di <br />
-          Dapur <span>BRINARA</span>
-        </h1>
-        <a href="" class="btn btn-danger tombol" data-toggle="modal" data-target="#modalContactForm" role="button">Pesan Sekarang </a>
+      <div class="bg-overlay">
+        <div class="container d-flex flex-column justify-content-center">
+          <h1 class="display-4 fw-bold">
+            <span>Beli Kue?</span> Yaa di <br />
+            Dapur <span>BRINARA</span>
+          </h1>
+          <a
+            href=""
+            class="btn btn-danger tombol"
+            data-bs-toggle="modal"
+            data-bs-target="#modalContactForm"
+            role="button"
+            >Pesan Sekarang
+          </a>
+        </div>
       </div>
     </div>
     <!-- Akhir Jumbotron -->
@@ -103,39 +164,59 @@
       <div class="row g-3">
         <div class="col-md-6 col-sm-12">
           <h1>Kualitas</h1>
-          <p style="font-size: large;">
-            Kami memprioritaskan kualitas sebagai elemen utama dalam setiap produk kue yang kami sajikan. 
+          <p style="font-size: large">
+            Kami memprioritaskan kualitas sebagai elemen utama dalam setiap
+            produk kue yang kami sajikan.
           </p>
-          <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">  Learn More!</button>
-          
+          <button
+            type="button"
+            class="btn btn-outline-info"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Learn More!
+          </button>
         </div>
 
-      <!-- deskripsi 1 -->
-      <div class="modal fade" id="exampleModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog"  >
-        <div class="modal-content ">
-          <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Kualitas</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                  <div class="container ">
-                    <!-- <div class="row"> -->
+        <!-- deskripsi 1 -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Kualitas</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="container">
                       <div class="col-lg-12">
                         <!-- Post content-->
                         <article>
                           <!-- Post header-->
                           <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">"Kualitas Tanpa<br> Kompromi."</h1>
+                            <h1 class="fw-bolder mb-1">
+                              "Kualitas Tanpa<br />
+                              Kompromi."
+                            </h1>
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">
-                            Agustus , 2023 Oleh Brinara
+                              Agustus , 2023 Oleh Brinara
                             </div>
                             <!-- Post categories-->
                             <a
@@ -148,62 +229,91 @@
                           <figure class="mb-4">
                             <img
                               class="img-fluid rounded"
-                              src="./assets/quality.avif"
+                              src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/quality.avif"
                               alt="..."
                             />
                           </figure>
                           <!-- Post content-->
                           <section class="mb-5">
-                            <p class="mb-4" style="font-size: medium;">
-                              Kami memprioritaskan kualitas 
-                              sebagai elemen utama dalam setiap produk kue yang kami sajikan. 
-                              Dari bahan baku hingga tahap akhir produksi, 
-                              Kami berkomitmen untuk menyajikan kue-kue dengan kualitas yang Terbaik &
-                              meyakini bahwa kualitas adalah landasan dari segala yang kami sajikan.</p>
-                            </div>
-                          <!-- </div> -->
-                          </div>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-
-      <!-- akhir deskripsi 1 -->
-
-              <div class="col-md-6 col-sm-12">
-                <h1>Bahan Premium</h1>
-                <p style="font-size: large;">Kami bangga menyajikan produk-produk kue dengan standar tertinggi di toko kue kami, 
-                  dan hal ini tak terlepas dari penggunaan berbagai bahan kualitas premium. </p>
-                  <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal1">  Learn More!</button>
+                            <p class="mb-4" style="font-size: medium">
+                              Kami memprioritaskan kualitas sebagai elemen utama
+                              dalam setiap produk kue yang kami sajikan. Dari
+                              bahan baku hingga tahap akhir produksi, Kami
+                              berkomitmen untuk menyajikan kue-kue dengan
+                              kualitas yang Terbaik & meyakini bahwa kualitas
+                              adalah landasan dari segala yang kami sajikan.
+                            </p>
+                          </section>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- deskripsi 2 -->
-      <div class="modal fade" id="exampleModal1"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog"  >
-        <div class="modal-content ">
-          <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Bahan Premium</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            </div>
           </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                  <div class="container ">
-                    <!-- <div class="row"> -->
+        </div>
+
+        <!-- akhir deskripsi 1 -->
+
+        <div class="col-md-6 col-sm-12">
+          <h1>Bahan Premium</h1>
+          <p style="font-size: large">
+            Kami bangga menyajikan produk-produk kue dengan standar tertinggi di
+            toko kue kami, dan hal ini tak terlepas dari penggunaan berbagai
+            bahan kualitas premium.
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-info"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+          >
+            Learn More!
+          </button>
+        </div>
+        <!-- deskripsi 2 -->
+        <div
+          class="modal fade"
+          id="exampleModal1"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">
+                  Bahan Premium
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="container">
+                      <!-- <div class="row"> -->
                       <div class="col-lg-12">
                         <!-- Post content-->
                         <article>
                           <!-- Post header-->
                           <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">"Bahan Baku Berkualitas: Fondasi Kelezatan di Brinara"</h1>
+                            <h1 class="fw-bolder mb-1">
+                              "Bahan Baku Berkualitas: Fondasi Kelezatan di
+                              Brinara"
+                            </h1>
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">
-                            Agustus , 2023 Oleh Brinara
+                              Agustus , 2023 Oleh Brinara
                             </div>
                             <!-- Post categories-->
                             <a
@@ -216,65 +326,97 @@
                           <figure class="mb-4">
                             <img
                               class="img-fluid rounded"
-                              src="./assets/premium.avif"
+                              src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/premium.avif"
                               alt="..."
                             />
                           </figure>
                           <!-- Post content-->
                           <section class="mb-5">
-                            <p class="mb-4" style="font-size: medium;">
-                              Di Brinara, kami memahami bahwa bahan baku berkualitas adalah fondasi dari setiap karya kuliner yang istimewa.
-                              Setiap potongan kue yang kami sajikan adalah hasil dari pemilihan bahan-bahan terbaik dengan teliti. 
-                              Mulai dari tepung terigu pilihan hingga bahan pelengkap lainnya, 
-                              kami hanya menggunakan yang terbaik untuk menciptakan produk-produk kue kami. 
-                              Kualitas bahan baku kami tidak hanya berdampak pada rasa yang lezat,
-                              tetapi juga pada tekstur yang sempurna dan tampilan yang menggoda.
-                              Kami percaya bahwa dengan bahan baku berkualitas, 
-                              kami mampu menghadirkan pengalaman kuliner yang luar biasa bagi setiap pelanggan kami.</p>
-                            </div>
-                          <!-- </div> -->
-                          </div>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-
-      <!-- akhir deskripsi 2 -->
-              <div class="col-md-6 col-sm-12">
-                <h1>Sentuhan Di setiap Kue </h1>
-                <p style="font-size: large;">
-                Kami berusaha untuk menyediakan produk kue yang dapat menjadi bagian indah dari perayaan dan acara penting .
-                </p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal3">  Learn More!</button>
+                            <p class="mb-4" style="font-size: medium">
+                              Di Brinara, kami memahami bahwa bahan baku
+                              berkualitas adalah fondasi dari setiap karya
+                              kuliner yang istimewa. Setiap potongan kue yang
+                              kami sajikan adalah hasil dari pemilihan
+                              bahan-bahan terbaik dengan teliti. Mulai dari
+                              tepung terigu pilihan hingga bahan pelengkap
+                              lainnya, kami hanya menggunakan yang terbaik untuk
+                              menciptakan produk-produk kue kami. Kualitas bahan
+                              baku kami tidak hanya berdampak pada rasa yang
+                              lezat, tetapi juga pada tekstur yang sempurna dan
+                              tampilan yang menggoda. Kami percaya bahwa dengan
+                              bahan baku berkualitas, kami mampu menghadirkan
+                              pengalaman kuliner yang luar biasa bagi setiap
+                              pelanggan kami.
+                            </p>
+                          </section>
+                        </article>
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
               </div>
-                      <!-- deskripsi 3 -->
-      <div class="modal fade" id="exampleModal3"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog"  >
-        <div class="modal-content ">
-          <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Eksklusivitas</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            </div>
           </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                  <div class="container ">
-                    <!-- <div class="row"> -->
+        </div>
+
+        <!-- akhir deskripsi 2 -->
+        <div class="col-md-6 col-sm-12">
+          <h1>Sentuhan Di setiap Kue</h1>
+          <p style="font-size: large">
+            Kami berusaha untuk menyediakan produk kue yang dapat menjadi bagian
+            indah dari perayaan dan acara penting .
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-info"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal3"
+          >
+            Learn More!
+          </button>
+        </div>
+        <!-- deskripsi 3 -->
+        <div
+          class="modal fade"
+          id="exampleModal3"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">
+                  Eksklusivitas
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="container">
                       <div class="col-lg-12">
                         <!-- Post content-->
                         <article>
                           <!-- Post header-->
                           <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">"Eksklusivitas Dalam Setiap Gigitan: Desain yang Mengesankan"</h1>
+                            <h1 class="fw-bolder mb-1">
+                              "Eksklusivitas Dalam Setiap Gigitan: Desain yang
+                              Mengesankan"
+                            </h1>
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">
-                            Agustus , 2023 Oleh Brinara
+                              Agustus , 2023 Oleh Brinara
                             </div>
                             <!-- Post categories-->
                             <a
@@ -287,122 +429,173 @@
                           <figure class="mb-4">
                             <img
                               class="img-fluid rounded"
-                              src="./assets/kue1.jpg"
+                              src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/kue1.jpg"
                               alt="..."
                             />
                           </figure>
                           <!-- Post content-->
                           <section class="mb-5">
-                            <p class="mb-4" style="font-size: large;">
-                              Di Brinara, kami memahami bahwa setiap kue adalah sebuah karya seni yang unik.
-                              Kami menempatkan desain dalam pusat perhatian, 
-                              menciptakan kreasi kue yang memukau mata dan menyentuh hati.
-                              Kami berkomitmen untuk menghiasi momen-momen berharga Anda dengan Eksklusivitas
-                              yang tak terlupakan melalui kue-kue kami.</p>
-                            </div>
-                          <!-- </div> -->
-                          </div>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-
-      <!-- akhir deskripsi 3 -->
-
-              <div class="col-md-6 col-sm-12">
-                <h1>Kreativitas</h1>
-                <p style="font-size: large;">
-                Kami selalu berusaha untuk memberikan variasi yang unik,menarik serta inovatif.
-                </p>
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal4">  Learn More!</button>
+                            <p class="mb-4" style="font-size: large">
+                              Di Brinara, kami memahami bahwa setiap kue adalah
+                              sebuah karya seni yang unik. Kami menempatkan
+                              desain dalam pusat perhatian, menciptakan kreasi
+                              kue yang memukau mata dan menyentuh hati. Kami
+                              berkomitmen untuk menghiasi momen-momen berharga
+                              Anda dengan Eksklusivitas yang tak terlupakan
+                              melalui kue-kue kami.
+                            </p>
+                          </section>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- deskripsi 4 -->
-      <div class="modal fade" id="exampleModal4"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog"  >
-        <div class="modal-content ">
-          <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Creative</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                  <div class="container ">
-                    <!-- <div class="row"> -->
+        </div>
+
+        <!-- akhir deskripsi 3 -->
+
+        <div class="col-md-6 col-sm-12">
+          <h1>Kreativitas</h1>
+          <p style="font-size: large">
+            Kami selalu berusaha untuk memberikan variasi yang unik,menarik
+            serta inovatif.
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-info"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal4"
+          >
+            Learn More!
+          </button>
+        </div>
+        <!-- deskripsi 4 -->
+        <div
+          class="modal fade"
+          id="exampleModal4"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Creative</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row align-items-center">
+                    <div class="container">
+                      <!-- <div class="row"> -->
                       <div class="col-lg-12">
                         <!-- Post content-->
                         <article>
                           <!-- Post header-->
                           <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">"Kreativitas Tanpa Batas: Kue Unik di Brinara"</h1>
+                            <h1 class="fw-bolder mb-1">
+                              "Kreativitas Tanpa Batas: Kue Unik di Brinara"
+                            </h1>
                             <!-- Post meta content-->
                             <div class="text-muted fst-italic mb-2">
-                            Agustus , 2023 Oleh Brinara
+                              Agustus , 2023 Oleh Brinara
                             </div>
                             <!-- Post categories-->
                             <a
                               class="badge bg-danger text-decoration-none link-light"
                               href="#!"
-                              >Creative</a
-                            >
+                              >Creative
+                            </a>
                           </header>
                           <!-- Preview image figure-->
                           <figure class="mb-4">
                             <img
                               class="img-fluid rounded"
-                              src="./assets/favicon.png"
+                              src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/favicon.png"
                               alt="..."
                             />
                           </figure>
                           <!-- Post content-->
                           <section class="mb-5">
-                            <p class="mb-4" style="font-size: large;">
-                              Di Brinara, kreativitas adalah bahan bakar di balik setiap kue yang kami ciptakan.
-                              Kami percaya bahwa kue bukan hanya tentang rasa, 
-                              Tetapi juga tentang cerita yang ingin kami sampaikan melalui setiap bentuk dan warna. 
-                              Dengan visi yang inovatif, kami menciptakan kue-kue yang menggabungkan seni kuliner dengan kreativitas tanpa batas.
-                              Setiap kue adalah sebuah kanvas di mana kami menggambarkan ide-ide segar dan unik, 
-                              menghasilkan karya yang tidak hanya lezat, tetapi juga memukau mata. 
-                              Di Brinara, kami mengundang Anda untuk merasakan perpaduan sempurna antara rasa dan 
-                              kreativitas dalam setiap gigitan kue kami.</p>
-                            </div>
-                          <!-- </div> -->
-                          </div>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      <!-- akhir deskripsi 4 -->
-              
+                            <p class="mb-4" style="font-size: large">
+                              Di Brinara, kreativitas adalah bahan bakar di
+                              balik setiap kue yang kami ciptakan. Kami percaya
+                              bahwa kue bukan hanya tentang rasa, Tetapi juga
+                              tentang cerita yang ingin kami sampaikan melalui
+                              setiap bentuk dan warna. Dengan visi yang
+                              inovatif, kami menciptakan kue-kue yang
+                              menggabungkan seni kuliner dengan kreativitas
+                              tanpa batas. Setiap kue adalah sebuah kanvas di
+                              mana kami menggambarkan ide-ide segar dan unik,
+                              menghasilkan karya yang tidak hanya lezat, tetapi
+                              juga memukau mata. Di Brinara, kami mengundang
+                              Anda untuk merasakan perpaduan sempurna antara
+                              rasa dan kreativitas dalam setiap gigitan kue
+                              kami.
+                            </p>
+                          </section>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <!-- akhir deskripsi 4 -->
+      </div>
+    </div>
+    <!-- </div> -->
 
     <!-- Akhir detail bahan  -->
 
     <!-- Tentang Kami -->
     <div id="Tentang_Kami" class="container mt-md-5 mt-sm-2">
       <div class="d-flex row align-items-center gambar">
-        <img src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/tentang_kami3.png" class="rounded-sm  my-img col-lg-6 col-sm-12" style="height: 480px;"/>
+        <img
+          src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/tentang_kami3.png"
+          class="rounded-sm my-img col-lg-6 col-sm-12"
+          style="height: 480px"
+        />
         <div class="col-lg-6 col-sm-12 paragraf">
           <h1>Tentang Kami</h1>
-          <p style="font-size: x-large;">
-            Selamat datang di Brinara, destinasi kue pilihan di Madiun! Kami adalah tempat di mana rasa lezat dan kualitas unggul berpadu. Dengan dedikasi terhadap kue berkualitas tinggi, kami hadir untuk melengkapi momen-momen istimewa Anda. Nikmati pengalaman kue yang tak terlupakan dengan sentuhan seni kuliner kami. Selamat datang dan mari berbagi kelezatan bersama Brinara!
+          <p style="font-size: x-large">
+            Selamat datang di Brinara, destinasi kue pilihan di Madiun! Kami
+            adalah tempat di mana rasa lezat dan kualitas unggul berpadu. Dengan
+            dedikasi terhadap kue berkualitas tinggi, kami hadir untuk
+            melengkapi momen-momen istimewa Anda. Nikmati pengalaman kue yang
+            tak terlupakan dengan sentuhan seni kuliner kami. Selamat datang dan
+            mari berbagi kelezatan bersama Brinara!
           </p>
         </div>
       </div>
       <div class="d-flex row align-items-center my-3">
         <div class="col-lg-6 col-md-12">
           <h1>Temukan Kami</h1>
-          <p style="font-size: x-large;">
-            Anda dapat menemukan Dapur Brinara dengan mudah di lokasi kami yang strategis di <span style="font-style: italic; font-weight: bolder;">Jl. Pilang Suci, RT.18/RW.04, Pilangbango, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63119.</span> Kami berada di tengah-tengah kota dengan akses yang nyaman, siap menyambut Anda untuk menikmati pilihan kue istimewa kami. Jangan ragu untuk datang dan menjelajahi berbagai kenikmatan kue yang kami sajikan di Brinara!
+          <p style="font-size: x-large">
+            Anda dapat menemukan Dapur Brinara dengan mudah di lokasi kami yang
+            strategis di
+            <span style="font-style: italic; font-weight: bolder"
+              >Jl. Pilang Suci, RT.18/RW.04, Pilangbango, Kec. Kartoharjo, Kota
+              Madiun, Jawa Timur 63119.</span
+            >
+            Kami berada di tengah-tengah kota dengan akses yang nyaman, siap
+            menyambut Anda untuk menikmati pilihan kue istimewa kami. Jangan
+            ragu untuk datang dan menjelajahi berbagai kenikmatan kue yang kami
+            sajikan di Brinara!
           </p>
         </div>
         <iframe
@@ -428,7 +621,7 @@
             <div
               id="carouselExampleIndicators2"
               class="carousel slide"
-              data-ride="carousel"
+              data-bs-ride="carousel"
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -441,9 +634,12 @@
                           src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue1.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Kue UlangTahun Tema "Traktor"</h4>
+                          <h4 class="card-title">
+                            Kue UlangTahun Tema "Traktor"
+                          </h4>
                           <p class="card-text">
-                            Dengan warna dominan kuning. Kue yang benar-benar mempresentasikan Alat-alat Konstruksi
+                            Dengan warna dominan kuning. Kue yang benar-benar
+                            mempresentasikan Alat-alat Konstruksi
                           </p>
                         </div>
                       </div>
@@ -458,7 +654,8 @@
                         <div class="card-body">
                           <h4 class="card-title">Pink With Vanilla</h4>
                           <p class="card-text">
-                            Dengan Tampilan simpel dengan tambahan Lelehan berwarna putih, menunjukkan kesan "Vanilla"Leleh.
+                            Dengan Tampilan simpel dengan tambahan Lelehan
+                            berwarna putih, menunjukkan kesan "Vanilla"Leleh.
                           </p>
                         </div>
                       </div>
@@ -473,7 +670,8 @@
                         <div class="card-body">
                           <h4 class="card-title">Line Friends X BTS</h4>
                           <p class="card-text">
-                            Kue dengan tema karakter BT21 ini sungguh ingin untuk dimiliki bukan?
+                            Kue dengan tema karakter BT21 ini sungguh ingin
+                            untuk dimiliki bukan?
                           </p>
                         </div>
                       </div>
@@ -490,10 +688,12 @@
                           src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_produk/kue4.jpeg"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Feminime "Cat" Yellow X Pink</h4>
+                          <h4 class="card-title">
+                            Feminime "Cat" Yellow X Pink
+                          </h4>
                           <p class="card-text">
-                            Kue Tema Kucing dengan warna Kuning & Pink, inspirasi 
-                            untuk merayakan Ultah Putri Tercinta.
+                            Kue Tema Kucing dengan warna Kuning & Pink,
+                            inspirasi untuk merayakan Ultah Putri Tercinta.
                           </p>
                         </div>
                       </div>
@@ -508,8 +708,8 @@
                         <div class="card-body">
                           <h4 class="card-title">Mixue Lovers</h4>
                           <p class="card-text">
-                            Kue Tema Karakter Mixue mungkin bisa jadi 
-                            Inspirasi untuk Mixue Lovers.
+                            Kue Tema Karakter Mixue mungkin bisa jadi Inspirasi
+                            untuk Mixue Lovers.
                           </p>
                         </div>
                       </div>
@@ -524,7 +724,7 @@
                         <div class="card-body">
                           <h4 class="card-title">Mixue Lovers v.2</h4>
                           <p class="card-text">
-                            Kue Tema Karakter Mixue dengan foto buah hati, 
+                            Kue Tema Karakter Mixue dengan foto buah hati,
                             Inspirasi untuk Mixue Lovers.
                           </p>
                         </div>
@@ -544,8 +744,8 @@
                         <div class="card-body">
                           <h4 class="card-title">Petualangan Doraemon</h4>
                           <p class="card-text">
-                            Kue dengan Tema Doraemon, bisa jadi Kue Ultah yang paling Memorable
-                            bagi Buah hati.
+                            Kue dengan Tema Doraemon, bisa jadi Kue Ultah yang
+                            paling Memorable bagi Buah hati.
                           </p>
                         </div>
                       </div>
@@ -560,7 +760,8 @@
                         <div class="card-body">
                           <h4 class="card-title">BTS Members</h4>
                           <p class="card-text">
-                            Anak bapak ibu suka sekali BTS?? , jadikan saja sebagai kue Ultah untuk buah hati 
+                            Anak bapak ibu suka sekali BTS?? , jadikan saja
+                            sebagai kue Ultah untuk buah hati
                           </p>
                         </div>
                       </div>
@@ -575,8 +776,8 @@
                         <div class="card-body">
                           <h4 class="card-title">BTS 2.0</h4>
                           <p class="card-text">
-                            Serasa Diucapin Ulang Tahun Sama seluruh member BTS??
-                            Pastinya Bakalan Jadi KUE Memorable untukmu 
+                            Serasa Diucapin Ulang Tahun Sama seluruh member
+                            BTS?? Pastinya Bakalan Jadi KUE Memorable untukmu
                           </p>
                         </div>
                       </div>
@@ -586,20 +787,20 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-row text-right" style="justify-content: center;">
+          <div class="d-flex flex-row justify-content-center">
             <a
-              class="btn btn-outline-info mb-3 mr-1 mr-2"
-              href="#carouselExampleIndicators2"
+              class="btn btn-outline-info mb-3 me-1"
               role="button"
-              data-slide="prev"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="prev"
             >
               <i class="fa fa-arrow-left"></i>
             </a>
             <a
-              class="btn btn-outline-danger mb-3 ml-2"
-              href="#carouselExampleIndicators2"
+              class="btn btn-outline-danger mb-3 ms-1"
               role="button"
-              data-slide="next"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide="next"
             >
               <i class="fa fa-arrow-right"></i>
             </a>
@@ -609,268 +810,509 @@
     </section>
     <!-- Akhir Display Produk  -->
 
-<!-- testimonial -->
-<div class="container-xl testimonial">
-	<div class="row">
-		<div class="col-sm-12">
-			<h2>Apa <b>Yang</b> mereka katakan ?</h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>   
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="media">
-									<img src="./assets/gambar_testimoni/testi_1.jpg" class="mr-3" alt="">
-									<div class="media-body">
-										<div class="testimonial">
-											<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-											<p class="overview"><b>Joko Widodo</b>, Presiden RI 7</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="media">
-									<img src="./assets/gambar_testimoni/testi_2.jpg" class="mr-3" alt="">
-									<div class="media-body">
-										<div class="testimonial">
-											<p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
-											<p class="overview"><b>Megawati</b>, Presiden Ri 5</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>			
-					</div>
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="media">
-									<img src="./assets/gambar_testimoni/testi_3.jpg" class="mr-3" alt="">
-									<div class="media-body">
-										<div class="testimonial">
-											<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-											<p class="overview"><b>Susilo Bambang Y</b>, Presiden Ri 6</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="media">
-									<img src="./assets/gambar_testimoni/testi_4.jpg" class="mr-3" alt="">
-									<div class="media-body">
-										<div class="testimonial">
-											<p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
-											<p class="overview"><b>Abdurahman Wahid</b>, Presiden Ri 4</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>			
-					</div>
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="media">
-									<img src="./assets/gambar_testimoni/testi_3.jpg" class="mr-3" alt="">
-									<div class="media-body">
-										<div class="testimonial">
-											<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-											<p class="overview"><b>Susilo Bambang Y</b>, Presiden Ri 6</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="media">
-									<img src="./assets/gambar_testimoni/testi_2.jpg" class="mr-3" alt="">
-									<div class="media-body">
-										<div class="testimonial">
-											<p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
-											<p class="overview"><b>Joko Widodo</b>, Presiden Ri 7</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>			
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- ahkir testimonial -->
+    <!-- testimonial -->
+    <div class="container-xl testimonial">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Apa <b>Yang</b> mereka katakan ?</h2>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                aria-label="Slide 1"
+                aria-current="true"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="media">
+                      <img
+                        src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_testimoni/testi_1.jpg"
+                        class="mr-3"
+                        alt=""
+                      />
+                      <div class="media-body">
+                        <div class="testimonial">
+                          <p>
+                            Lorem ipsum dolor sit amet, consec adipiscing elit.
+                            Nam eusem scelerisque tempor, varius quam luctus
+                            dui. Mauris magna metus nec.
+                          </p>
+                          <p class="overview">
+                            <b>Joko Widodo</b>, Presiden RI 7
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="media">
+                      <img
+                        src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_testimoni/testi_2.jpg"
+                        class="mr-3"
+                        alt=""
+                      />
+                      <div class="media-body">
+                        <div class="testimonial">
+                          <p>
+                            Vestibulum quis quam ut magna consequat faucibus.
+                            Pellentesque eget mi suscipit tincidunt. Utmtc
+                            tempus dictum. Pellentesque virra.
+                          </p>
+                          <p class="overview"><b>Megawati</b>, Presiden Ri 5</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="media">
+                      <img
+                        src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_testimoni/testi_3.jpg"
+                        class="mr-3"
+                        alt=""
+                      />
+                      <div class="media-body">
+                        <div class="testimonial">
+                          <p>
+                            Lorem ipsum dolor sit amet, consec adipiscing elit.
+                            Nam eusem scelerisque tempor, varius quam luctus
+                            dui. Mauris magna metus nec.
+                          </p>
+                          <p class="overview">
+                            <b>Susilo Bambang Y</b>, Presiden Ri 6
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="media">
+                      <img
+                        src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_testimoni/testi_4.jpg"
+                        class="mr-3"
+                        alt=""
+                      />
+                      <div class="media-body">
+                        <div class="testimonial">
+                          <p>
+                            Vestibulum quis quam ut magna consequat faucibus.
+                            Pellentesque eget mi suscipit tincidunt. Utmtc
+                            tempus dictum. Pellentesque virra.
+                          </p>
+                          <p class="overview">
+                            <b>Abdurahman Wahid</b>, Presiden Ri 4
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="media">
+                      <img
+                        src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_testimoni/testi_3.jpg"
+                        class="mr-3"
+                        alt=""
+                      />
+                      <div class="media-body">
+                        <div class="testimonial">
+                          <p>
+                            Lorem ipsum dolor sit amet, consec adipiscing elit.
+                            Nam eusem scelerisque tempor, varius quam luctus
+                            dui. Mauris magna metus nec.
+                          </p>
+                          <p class="overview">
+                            <b>Susilo Bambang Y</b>, Presiden Ri 6
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="media">
+                      <img
+                        src="https://raw.githubusercontent.com/ramjakaperdana23/gamelab/main/assets/gambar_testimoni/testi_2.jpg"
+                        class="mr-3"
+                        alt=""
+                      />
+                      <div class="media-body">
+                        <div class="testimonial">
+                          <p>
+                            Vestibulum quis quam ut magna consequat faucibus.
+                            Pellentesque eget mi suscipit tincidunt. Utmtc
+                            tempus dictum. Pellentesque virra.
+                          </p>
+                          <p class="overview">
+                            <b>Joko Widodo</b>, Presiden Ri 7
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ahkir testimonial -->
 
-
-    <div id="Kontak" class="container mt-5">
-      <div class="d-flex row justify-content-between align-items-center ">
+    <div id="Kontak" class="container mt-5 mb-4 mb-lg-0">
+      <div class="d-flex row justify-content-between align-items-center">
         <div class="col-lg-6 col-md-12 anak-kontak">
-          <h1 class="display-4 fw-bold ">
+          <h1 class="display-4 fw-normal">
             <span>Masih </span> Ragu ?<br />
-          Yuk <span>sini Konsultasikan Kuemu dengan Kami </span>
+            Yuk <span>sini Konsultasikan Kuemu dengan Kami </span>
           </h1>
         </div>
         <div class="col-lg-6 col-md-12 footer-tombol">
-          <div class="d-flex flex-lg-row flex-md-column footer-tombol-wrapper " style="gap: 8px;">
+          <div
+            class="d-flex flex-column flex-lg-row flex-md-column footer-tombol-wrapper align-items-center"
+          >
             <!-- <button type="button" class=" ">WA</button> -->
-            <a class="btn btn-outline-success fab fa-whatsapp" target="_blank" href="https://w.app/9aqein" role="button">WA</a>
-            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#modalContactForm">Hubungi Kami</button>
+            <a target="_blank" class="me-0 me-lg-2" href="https://w.app/9aqein">
+              <button class="btn btn-outline-success" type="button">
+                <i class="fab fa-whatsapp me-1"></i>
+                WA
+              </button>
+            </a>
+            <a
+              target="_blank"
+              href="javascript:void(0)"
+              data-bs-toggle="modal"
+              data-bs-target="#modalContactForm"
+            >
+              <button class="btn btn-outline-info mt-2 mt-lg-0" type="button">
+                <i class="fa fa-phone me-1"></i>
+                Hubungi Kami
+              </button>
+            </a>
+            <!-- <a
+              class="btn btn-outline-success fab fa-whatsapp"
+              target="_blank"
+              href="https://w.app/9aqein"
+              role="button"
+              >WA</a
+            > -->
+            <!-- <button
+              type="button"
+              class="btn btn-outline-info"
+              data-bs-toggle="modal"
+              data-bs-target="#modalContactForm"
+            >
+              Hubungi Kami
+            </button> -->
           </div>
+        </div>
       </div>
-      </div>
+    </div>
 
     <!-- Testimonial -->
 
     <!-- Akhir Testimonial -->
 
-
-
     <!-- FAQ -->
-  <div id="FAQ" class="container">
-    <div class="row" style="justify-content: center;">
+    <div id="FAQ" class="container">
+      <div class="row" style="justify-content: center">
         <div class="col-md-10">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              Apakah "Brinara" menerima pesanan kue khusus untuk acara-acara tertentu?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                            <p>Ya, tentu saja! Kami dengan senang hati menerima pesanan kue khusus untuk berbagai acara seperti ulang tahun, pernikahan, pertemuan bisnis, dan lain-lain.
-                              Tim kami akan bekerja sama dengan Anda untuk merancang kue yang sesuai dengan tema dan preferensi acara Anda. </p>
-                        </div>
-                    </div>
+          <div
+            class="panel-group"
+            id="accordion"
+            role="tablist"
+            aria-multiselectable="true"
+          >
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a
+                    role="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                    class="collapsed"
+                  >
+                    Apakah "Brinara" menerima pesanan kue khusus untuk
+                    acara-acara tertentu?
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseOne"
+                class="panel-collapse collapse in"
+                role="tabpanel"
+                data-bs-parent="accordion"
+                aria-labelledby="headingOne"
+              >
+                <div class="panel-body">
+                  <p>
+                    Ya, tentu saja! Kami dengan senang hati menerima pesanan kue
+                    khusus untuk berbagai acara seperti ulang tahun, pernikahan,
+                    pertemuan bisnis, dan lain-lain. Tim kami akan bekerja sama
+                    dengan Anda untuk merancang kue yang sesuai dengan tema dan
+                    preferensi acara Anda.
+                  </p>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Apa spesialisasi dari "Dapur Brinara"?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            <p> kami menawarkan beragam pilihan kue, mulai dari klasik seperti jajanan pasar hingga kue inovatif,
-                              sehingga pelanggan dapat menemukan sesuai dengan preferensi mereka. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Bagaimana cara saya melakukan pemesanan di "Dapur Brinara"?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            <p>Anda bisa mengunjungi toko fisik, menghubungi melalui telepon, memesan melalui situs web "Brinara" ini melalui form kontak lewat tombol 
-                              <a class="btn btn-danger" href="#gambar-cover" role="button">Pesan Sekarang</a> yang ada, atau <br><h3 style="text-align: center;">hubungi kami lewat social media kami dibawah <br><i class="fa-solid fa-arrow-down fa-bounce fa-xl mt-5"></i></h3> </p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a
+                    class="collapsed"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Apa spesialisasi dari "Dapur Brinara"?
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseTwo"
+                class="panel-collapse collapse"
+                role="tabpanel"
+                aria-labelledby="headingTwo"
+                data-bs-parent="accordion"
+              >
+                <div class="panel-body">
+                  <p>
+                    kami menawarkan beragam pilihan kue, mulai dari klasik
+                    seperti jajanan pasar hingga kue inovatif, sehingga
+                    pelanggan dapat menemukan sesuai dengan preferensi mereka.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a
+                    role="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Bagaimana cara saya melakukan pemesanan di "Dapur Brinara"?
+                  </a>
+                </h4>
+              </div>
+              <div
+                id="collapseThree"
+                class="panel-collapse collapse show"
+                role="tabpanel"
+                aria-labelledby="headingThree"
+                data-bs-parent="accordion"
+              >
+                <div class="panel-body">
+                  <!-- <p> -->
+                  Anda bisa mengunjungi toko fisik, menghubungi melalui telepon,
+                  memesan melalui situs web "Brinara" ini melalui form kontak
+                  lewat tombol
+                  <a class="btn btn-danger" href="#gambar-cover" role="button"
+                    >Pesan Sekarang</a
+                  >
+                  yang ada, atau <br />
+                  <h3 style="text-align: center" class="mt-4">
+                    hubungi kami lewat social media kami dibawah <br /><i
+                      class="fa-solid fa-arrow-down fa-bounce fa-xl mt-5"
+                    ></i>
+                  </h3>
+                  <!-- </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
     <!-- Akhir FAQ -->
-    <div class="modal fade" id="modalContactForm"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog"  >
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h2 class="modal-title w-100 font-weight-bold" style="font-family: cursive;">Form pemesanan</h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <form target="_blank" action="https://formsubmit.co/bbda2e33df65a6d1b1cbd316fdd55220" method="POST">
-      <div class="modal-body mx-3">
-        <div class="mb-3">
-          <label for="email" class="form-label">Alamat Email</label>
-          <input type="email" id="email" class="form-control" placeholder="Email" name="email" required >
-        </div>
+    <div
+      class="modal fade"
+      id="modalContactForm"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2
+              class="modal-title w-100 font-weight-bold"
+              style="font-family: cursive"
+            >
+              Form pemesanan
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form
+            target="_blank"
+            action="https://formsubmit.co/bbda2e33df65a6d1b1cbd316fdd55220"
+            method="POST"
+          >
+            <div class="modal-body mx-3">
+              <div class="mb-3">
+                <label for="email" class="form-label">Alamat Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
 
-        <div class="mb-3">
-          <label for="name" class="form-label">Nama</label>
-          <input type="text" id="Name" class="form-control" placeholder="Nama" name="name" required >
-        </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  id="Name"
+                  class="form-control"
+                  placeholder="Nama"
+                  name="name"
+                  required
+                />
+              </div>
 
-        <div class="mb-3">
-          <label for="Message" class="form-label">Detail Pesan</label>
-          <textarea class="form-control" id="Message" name="message" rows="10" required></textarea>
+              <div class="mb-3">
+                <label for="Message" class="form-label">Detail Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="Message"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <p style="font-family: cursive">
+                *Pastikan Sertakan No.Telpon pada pesanan
+              </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="submit" class="btn btn-outline-danger">
+                Send <i class="fas fa-paper-plane-o ml-1"></i>
+              </button>
+            </div>
+          </form>
         </div>
-        <p style="font-family: cursive;"> *Pastikan Sertakan No.Telpon pada pesanan</p>
       </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button  type="submit" class="btn btn-outline-danger">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
-      </div>
-    </form>
     </div>
-  </div>
-</div>
-<!-- akhir dari form kontak -->
+    <!-- akhir dari form kontak -->
 
-      <!-- Footer  -->
-      <footer class="bg-light text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Facebook -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #3b5998;"
-              href="https://www.facebook.com/profile.php?id=61550546151060"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-      
-            <!-- Whatsapp -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #6cee55;"
-              href="https://w.app/9aqein"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="https://www.instagram.com/rissa.nurbiyanti/"
-              target="_blank"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <p class="text-center text-muted">© 2023 Dapur, Brinara</p>
-        <!-- Copyright -->
-      </footer>
-      <!-- Akhir Web/ Footer -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <!-- Footer  -->
+    <footer class="bg-light text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.facebook.com/profile.php?id=61550546151060"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Whatsapp -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #6cee55"
+            href="https://w.app/9aqein"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/rissa.nurbiyanti/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <p class="text-center text-muted">© 2023 Dapur, Brinara</p>
+      <!-- Copyright -->
+    </footer>
+    <!-- Akhir Web/ Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
