@@ -39,7 +39,7 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -88,7 +88,9 @@
             </li>
           </ul>
           <a
-            class="btn btn-outline-danger fa fa-address-book"
+            ion-icon
+            name="logo-instagram"
+            class="btn btn-outline-danger"
             href="#collapseThree"
             role="button"
           >
@@ -1307,6 +1309,7 @@
       <!-- Copyright -->
     </footer>
     <!-- Akhir Web/ Footer -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script> -->
     <script
@@ -1314,5 +1317,18 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          // nav.classList.add("bg-light", "dark");
+          $("nav").addClass("bg-light").attr("data-bs-theme", "light");
+        } else {
+          $("nav").removeClass("bg-light").attr("data-bs-theme", "dark");
+          // nav.classList.remove("bg-light", "dark");
+        }
+      });
+    </script>
   </body>
 </html>
